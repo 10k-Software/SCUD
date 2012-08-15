@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Testlevel.xml
+    Created on : October 3, 2008, 12:35 AM
+    Author     : cgibson
+    Description: 
+        Test level data for the SCUD
+-->
+
+<root>
+    <room id="0"> <!-- Main room -->
+        <description>
+  Intro
+
+~~~~~~~~~~
+           
+You are Dane, a young farmer's son from the small, farming village of Townsend. You resided with your stern but caring family, helping your mother with the chores and your father with the plowing, until the fateful day came when, in preparation for the Fall Moon Festival, you accidentally destroyed the Scared Tooth of Baelorn in the midst of moving it to the village plaza.
+        
+The three-foot dragon tooth had remained hidden within the safe confines of your church, a memorial of the time when an ancient red dragon descended upon Townsend many decades ago with intent to devour the little village. Baelorn, the god of strength and protection, flew from the heavens and drove his mighty axe through the dragon's neck, saving your village from a gruesome fate. He had given the elder of the village the largest tooth from the mighty dragon's jaw, promising that so long as the village kept that tooth safe, dragons would never dare attack the village again. His word was true, as Aranox, a fierce dragon that often sought to destroy the village, could do no more than fume impatiently within the depths of his lair, hidden within the nearby mountains. And so the Tooth was kept safe deep within the vaults of the church, except for when it was placed in the center of the village during the Fall Moon Festival, when the villagers celebrated the end of the harvest and gave thanks to their merciful god, Baelorn. [wait]
+
+No one could have predicted  the earthquake that came and shook the ground with such a force that it sent you reeling off of your feet, the smooth Tooth slipping through  your grasp; no one could have predicted that the once sturdy Tooth had grown weak over the years, or that it would succumb to the short fall, the decayed Tooth shattering into dust. But so it has passed, and now the magic is gone, the seals are broken; it will not take the dragons long to figure out that your village is prey once more, and Aranox has been eagerly waiting for a chance to ravage it...
+
+Shunned by your village folk, you have been sent to face the fearsome dragon Aranox deep within the mountains. Should you defeat the terrible beast and retrieve his largest tooth, the god Baelorn will accept your triumph and enchant the tooth so that it will protect village once more. Should you fail, Aranox will be satisfied, if only for a while, granting the village time to relocate to another city. Either way, the village will be saved. Whether you survive or not is up to you...  [wait]
+
+You approach the mouth of a cave entrance, gripping the sides as you drop in. The seven-foot drop doesn't damage you, but the slippery walls will make it impossible to leave through this door. Your only chance is to move forward. There should be an exit out of the caves in Aranox's lair. All you need to do is find and get past a murderous dragon.
+
+Now you begin your journey... type 'begin' to start!
+        </description>
+        <do_action>0</do_action> <!-- Begin -->
+    </room>
+
+    <room id="1"> <!-- Main room -->
+        <description>
+The cave entrance is relatively dry. There is some small vegetation that grows from where seeds have fallen into the hole, lost forever in this winding maze. To your left, there is some wreckage, perhaps from a small tent that was used long ago. Most of the materials are worn and useless. There is a plain metal door to the east, and a passage to the south.
+        </description>
+        <do_action>1</do_action> <!-- Broken tent -->
+        <do_action>17</do_action>
+        <do_action>19</do_action>
+    </room>
+    
+    <room id="2">
+        <description>
+You enter into the north side of a large chamber room, which is separated by a huge bottomless chasm. There is no way you could jump it, but there are stalagmites on either side that looked as if they supported a bridge-like construct long ago. A slight wind fills the chamber with a gentle sound, soothing your nerves. In the north-west corner, there is an old, moldy chest, have covered in dirt and rocks. There are also two cave passages, one north and one east.
+        </description>
+        <do_action>2</do_action>
+        <do_action>20</do_action>
+        <do_action>21</do_action>
+        <do_action>23</do_action>
+    </room>
+    
+    <room id="3">
+        <description>
+There are all sorts of glowing fungi thriving in this passage, coloring the walls with their lights. Thankfully, none of them seem to be moving, as you have heard tales of fungi monsters that preyed on adventurers. Even so, the skeleton in the corner unnerves you a bit as you proceed. It looks similarly dressed as you, which doesn’t make you feel any better. There is a west passage and a south passage out of this room.
+        </description>
+        <do_action>3</do_action>
+        <do_action>22</do_action>
+        <do_action>25</do_action>
+    </room>
+    
+    <room id="4">
+        <description>
+Covering the room’s floor and walls are wood planks of a variety of different sizes. None of them are usable, and some are way too heavy to be moved. On the west wall there is a door, but it is blocked by some of the planks. The planks are immovable on top of that. To the south there is a passage, but there is a rather large snake resting in front of it, and when you approach, it hisses, not intending on letting you pass.
+        </description>
+        <do_action>26</do_action>
+        <do_action>27</do_action>
+        <do_action>29</do_action>
+    </room>
+    
+    <room id="5">
+        <description>
+You enter on the south side of the large chamber, the chasm separating the two ends of the room. The wind that lifts from the chasm calms you once more. There is a pedestal made of stone that rests in the center of the room, its sides engraved and covered in jewels. You can travel north if you have the means to cross the chasm; otherwise, there is a passage west and a passage east.
+        </description>
+        <do_action>4</do_action>
+        <do_action>24</do_action>
+        <do_action>28</do_action>
+        <do_action>31</do_action>
+    </room>
+    
+    <room id="6">
+        <description>
+The room is seemingly bare, though upon closer inspection, there are claw marks lining the floor. They are huge and deep, and they obviously belong to the dragon Aranox. There is a passage south and a passage east.
+        </description>
+        <do_action>32</do_action>
+        <do_action>33</do_action>
+    </room>
+    
+    <room id="7">
+        <description>
+Claw marks cover this room as well as some old scales and a variety of bones. It is also uncomfortably hot. To the south is grand metal door etched with wyrm markings. There is also a passage to the north.
+        </description>
+        <do_action>34</do_action>
+        <do_action>35</do_action>
+    </room>
+    
+    <room id="8">
+        <description>
+You step into a large chamber, the ceiling high above. It is immensely hot, but though you feel overwhelmed by the temperature, the sight before you sends your mind reeling. Pressed against the back wall is a sleeping red dragon, its scales shimmering like fire in the dim light of the mushrooms that line the hall. The beast is monstrous, and with every deep breath, puffs of smoke escape from its nostrils. Even in its sleep, the monster seems wild and out of control, a deep rage barely tamed within.
+            
+It is Aranox.
+            
+The only exit available to you is the passage you came from, located north.
+        </description>
+        <do_action>36</do_action>
+        <do_action>37</do_action>
+    </room>
+    
+    <room id="9">
+        <description>
+The room is covered with a variety of rocks. However, one of the larger rocks in the back seems out of place, its color and shape much different from the rest. The only exit is north.
+        </description>
+        <do_action>5</do_action>
+        <do_action>30</do_action>
+    </room>
+    
+    <room id="10">
+        <description>
+The door leads to a perfectly square room, its walls smooth and polished. The room is completely bare except for a stand in the center of the room. A sword rests on top of it, lying peacefully in the silent room.
+        </description>
+        <do_action>6</do_action>
+        <do_action>18</do_action>
+    </room>
+    
+    <room id="11">
+        <description>You are dead.</description>
+    </room>
+    
+    <room id="12">
+        <description>You win.</description>
+    </room>
+    
+    <action id="0"> <!-- Begin -->
+        <name>begin</name>
+        <move>1</move>
+    </action>
+
+    <action id="1"> <!-- Search broken tent -->
+        <name>examine broken tent</name>
+        <description>You search the broken tent.</description>
+        <require_item>1</require_item>
+        <success>9</success>
+        <failure>8</failure>
+    </action>
+    
+    <action id="2"> <!-- Search chest -->
+        <name>examine chest</name>
+        <description>You search the chest.</description>
+        <require_item>2</require_item>
+        <success>9</success>
+        <failure>10</failure>
+    </action>
+    
+    <action id="3"> <!-- Search skeleton -->
+        <name>examine skeleton</name>
+        <description>You search the skeleton.</description>
+        <require_item>3</require_item>
+        <success>12</success>
+        <failure>11</failure>
+    </action>
+    
+    <action id="4"> <!-- Search pedestal -->
+        <name>examine pedestal</name>
+        <description>You search the pedestal</description>
+        <require_item>4</require_item>
+        <success>13</success>
+        <failure>14</failure>
+    </action>
+    
+    <action id="5"> <!-- Search stone -->
+        <name>examine stone</name>
+        <description>You search the stone.</description>
+        <require_item>5</require_item>
+        <success>16</success>
+        <failure>15</failure>
+    </action>
+    
+    <action id="6"> <!-- Search stone -->
+        <name>examine cabinet</name>
+        <description>You search the cabinet.</description>
+        <require_item>6</require_item>
+        <success>43</success>
+        <failure>42</failure>
+    </action>
+    
+    <action id="8"> <!-- Get rope in tent -->
+        <description>You find some rope.</description>
+        <add_item>1</add_item>
+    </action>
+
+    <action id="9"> <!-- Nothing inside tent -->
+        <description>You find nothing inside. What did you expect?</description>
+    </action>
+    
+    <action id="10"> <!-- Get rope in tent -->
+        <description>You find a small pack of matches.</description>
+        <add_item>2</add_item>
+    </action>
+    
+    <action id="11"> <!-- Get flute from skeleton -->
+        <description>
+            You find an old flute in one of the bony hands of the 
+            skeleton.
+        </description>
+        <add_item>3</add_item>
+    </action>
+
+    <action id="12"> <!-- Nothing on skeleton -->
+        <description>Just a plain old skeleton.</description>
+    </action>
+    
+    <action id="13"> <!-- Get dragon key from pedestal -->
+        <description>
+            You walk up to the pedestal, a strange golden key in the shape of a 
+            dragon shines in the dim light.
+        </description>
+        <add_item>4</add_item>
+    </action>
+
+    <action id="14"> <!-- Nothing on pedestal -->
+        <description>You got the dragon key, don't be greedy.</description>
+    </action>
+    
+    <action id="15"> <!-- Get password from stone -->
+        <description>
+You pick up the stone, and notice a strange word carved in the bottom that spells "Learta".  Better remember this for later.
+        </description>
+        <add_item>5</add_item>
+    </action>
+
+    <action id="16"> <!-- Nothing new on rock -->
+        <description>
+You notice the same strange word scratched on the rock. Nothing's changed.
+        </description>
+    </action>
+    
+    <action id="17"> <!-- From 1 to 10 -->
+        <name>move east</name>
+        <require_item>5</require_item>
+        <failure>40</failure>
+        <move>10</move>
+    </action>
+    
+    <action id="18"> <!-- From 10 to 1 -->
+        <name>move west</name>
+        <require_item>5</require_item>
+        <failure>999</failure>
+        <move>1</move>
+    </action>
+    
+    <action id="19"> <!-- From 1 to 2 -->
+        <name>move south</name>
+        <move>2</move>
+    </action>
+    
+    <action id="20"> <!-- From 2 to 1 -->
+        <name>move north</name>
+        <move>1</move>
+    </action>
+    
+    <action id="21"> <!-- From 2 to 3 -->
+        <name>move east</name>
+        <move>3</move>
+    </action>
+    
+    <action id="22"> <!-- From 3 to 2 -->
+        <name>move west</name>
+        <move>2</move>
+    </action>
+    
+    <action id="23"> <!-- From 2 to 5 -->
+        <name>move south</name>
+        <require_item>1</require_item>
+        <failure>41</failure>
+        <move>5</move>
+    </action>
+    
+    <action id="24"> <!-- From 5 to 2 -->
+        <name>move north</name>
+        <require_item>1</require_item>
+        <failure>999</failure>
+        <move>5</move>
+    </action>
+    
+    <action id="25"> <!-- From 3 to 4 -->
+        <name>move south</name>
+        <move>4</move>
+    </action>
+    
+    <action id="26"> <!-- From 4 to 3 -->
+        <name>move north</name>
+        <move>3</move>
+    </action>
+    
+    <action id="27"> <!-- From 4 to 5 -->
+        <name>move west</name>
+        <move>5</move>
+    </action>
+    
+    <action id="28"> <!-- From 5 to 4 -->
+        <name>move east</name>
+        <move>4</move>
+    </action>
+    
+    <action id="29"> <!-- From 4 to 9 -->
+        <name>move south</name>
+        <move>9</move>
+    </action>
+    
+    <action id="30"> <!-- From 9 to 4 -->
+        <name>move north</name>
+        <move>4</move>
+    </action>
+    
+    <action id="31"> <!-- From 5 to 6 -->
+        <name>move west</name>
+        <move>6</move>
+    </action>
+    
+    <action id="32"> <!-- From 6 to 5 -->
+        <name>move east</name>
+        <move>5</move>
+    </action>
+    
+    <action id="33"> <!-- From 6 to 7 -->
+        <name>move south</name>
+        <move>7</move>
+    </action>
+    
+    <action id="34"> <!-- From 7 to 6 -->
+        <name>move north</name>
+        <move>6</move>
+    </action>
+    
+    <action id="35"> <!-- From 7 to 8 -->
+        <name>move south</name>
+        <move>8</move>
+    </action>
+    
+    <action id="36"> <!-- From 8 to 7 -->
+        <name>move north</name>
+        <move>7</move>
+    </action>
+    
+    <action id="37"> <!-- From 8 to 7 -->
+        <name>attack dragon</name>
+        <require_item>6</require_item>
+        <success>38</success>
+        <failure>39</failure>
+    </action>
+    
+    <action id="38">
+        <description>
+With the advantage of surprise, you race toward the sleeping dragon with a newfound courage you never believed existed. However, as you near the beast, you suddenly realize that Aranox is much larger than you initially thought. Your confidence would be shattered, if not for the blade of cold steel you have in your grasp. With a cry, you slash the sword across the mighty creature’s face. Aranox roars in pain, blood gushing from his face as he groggily stands. “Who dare attack me in my own lair?!” He bellows, the cave walls reverberating. Glancing down, he sees you and laughs. “Mmmmm, an early-morning snack. How kind of your village to send me breakfast!” Before you can run, he snatches you up and brings you into his mouth. However, you are not afraid, biding your time until the moment before he crushes you in his jaws. You quickly free your sword-arm and stab the blade deep into the dragon’s throat. He roars a gurgle of blood and pain as he drops you to the ground. For a moment, the best wavers erratically before crashing to the ground, his body still.\n\n
+
+Aranox is dead.
+
+You only sit astonished over your feat for a moment before the glittering teeth in the beast’s maw reminds you of your mission. Using the sword, you dislodged the largest once, and follow the path that lay behind the dead beast out of the room. It takes you out of the mountain caves, where you are greeted by a setting sun. The village remains below, seemingly untouched in its time of vulnerability. You quickly head there and are met with incredulous but cheerful faces as you present the tooth to the village elder. Upon receiving it, the Tooth of Aranox begins to glow, enchanted by the god Baelorn’s magic. The village is once again safe, and not only are you alive, you are a hero.
+        </description>
+        <move>12</move>
+    </action>
+    
+    <action id="39">
+        <description>
+With the advantage of surprise, you race toward the sleeping dragon with a newfound courage you never believed existed. However, as you near the beast, you suddenly realize that Aranox is much larger than you initially thought. Your confidence shattered, you weakly bop the mighty creature on his nose. Aranox jerks his head, then groggily stands. “Who dare defies my lair?!” He bellows, the cave walls reverberating. Glancing down, he sees you and laughs. “Mmmmm an early-morning snack. How kind of your village to send me breakfast!” Before you can run, he snatches you up and brings you into his mouth. Unable to do anything more than beat at his paw with your weak fists, you are left defenseless as Aranox crushes you in his jaws, killing you instantly.
+
+Honestly, who brings just their bare fists to a fight with a dragon?
+        </description>
+        <move>11</move>
+    </action>
+    
+    <action id="40">
+        <description>
+The door in front of you has a line of cube-shaped holes, similarly sized blocks litter the floor with number and letters scratched upon them.  You don't know how to arrange the blocks, it will take too much time.
+        </description>
+    </action>
+    
+    <action id="41">
+        <description>
+            A large chasm separates you and the room to the south.  Maybe there 
+            is a way to swing across...
+        </description>
+    </action>
+    
+    <action id="42"> <!-- Get sword from cabinet -->
+        <description>
+You open the cabinet and find a beautiful golden sword!
+        </description>
+        <add_item>6</add_item>
+    </action>
+
+    <action id="43"> <!-- Nothing new in the cabinet -->
+        <description>
+You find... nothing but dust and spiderwebs.
+        </description>
+    </action>
+    
+    <item id="1"> <!-- Old rope -->
+        <description>Some old Rope</description>
+        <name>Rope</name>
+    </item>
+    
+    <item id="2"> <!-- Matches -->
+        <description>A pack of Matches</description>
+        <name>Matches</name>
+    </item>
+    
+    <item id="3"> <!-- Old rope -->
+        <description>Dusty Flute</description>
+        <name>Flute</name>
+    </item>
+    
+    <item id="4"> <!-- Dragon Key -->
+        <description>Golden Dragon Key</description>
+        <name>Dragon Key</name>
+    </item>
+    
+    <item id="5"> <!-- Password -->
+        <description>Password</description>
+        <name>Password</name>
+    </item>
+    
+    <item id="6"> <!-- Sword -->
+        <description>Sword</description>
+        <name>Sword</name>
+    </item>
+</root>

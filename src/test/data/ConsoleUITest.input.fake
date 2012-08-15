@@ -1,0 +1,10 @@
+begin
+help
+return true
+
+look
+examine broken tent
+inventory
+use rope
+move south
+quit

@@ -1,0 +1,903 @@
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /home/cgibson/NetBeansProjects/ProjectSCUD/build
+
+compile:
+    [mkdir] Created dir: /home/cgibson/NetBeansProjects/ProjectSCUD/build/classes
+    [javac] Compiling 11 source files to /home/cgibson/NetBeansProjects/ProjectSCUD/build/classes
+    [javac] ----------
+    [javac] 1. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 5)
+    [javac] 	import java.util.Scanner;
+    [javac] 	       ^^^^^^^^^^^^^^^^^
+    [javac] The import java.util.Scanner cannot be resolved
+    [javac] ----------
+    [javac] 2. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 26)
+    [javac] 	private Scanner scan;
+    [javac] 	        ^^^^^^^
+    [javac] Scanner cannot be resolved to a type
+    [javac] ----------
+    [javac] 3. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 38)
+    [javac] 	scan = new Scanner(System.in);
+    [javac] 	^^^^
+    [javac] scan cannot be resolved
+    [javac] ----------
+    [javac] 4. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 38)
+    [javac] 	scan = new Scanner(System.in);
+    [javac] 	           ^^^^^^^
+    [javac] Scanner cannot be resolved to a type
+    [javac] ----------
+    [javac] 5. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 64)
+    [javac] 	scan.nextLine();
+    [javac] 	^^^^
+    [javac] scan cannot be resolved
+    [javac] ----------
+    [javac] 6. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java
+    [javac]  (at line 105)
+    [javac] 	input = scan.nextLine();
+    [javac] 	        ^^^^
+    [javac] scan cannot be resolved
+    [javac] ----------
+    [javac] 7. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java
+    [javac]  (at line 129)
+    [javac] 	ArrayList<String> actionList = gameLogic.getActionNames(); 
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 8. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 129)
+    [javac] 	ArrayList<String> actionList = gameLogic.getActionNames(); 
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 9. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java
+    [javac]  (at line 132)
+    [javac] 	for (String actionText: actionList)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] 10. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 150)
+    [javac] 	ArrayList<String> inventList = gameLogic.getInventory();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 11. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java
+    [javac]  (at line 150)
+    [javac] 	ArrayList<String> inventList = gameLogic.getInventory();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 12. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 150)
+    [javac] 	ArrayList<String> inventList = gameLogic.getInventory();
+    [javac] 	                                         ^^^^^^^^^^^^
+    [javac] The method getInventory() is undefined for the type GameLogic
+    [javac] ----------
+    [javac] 13. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ConsoleUI.java (at line 155)
+    [javac] 	for (String inventText: inventList)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] ----------
+    [javac] 14. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/ScudApp.java
+    [javac]  (at line 34)
+    [javac] 	public static void main(String ... args)
+    [javac] 	                        ^^^^^^^^^^^^^^^
+    [javac] Syntax error, varargs are only available if source level is 5.0
+    [javac] ----------
+    [javac] ----------
+    [javac] 15. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 161)
+    [javac] 	@Override
+    [javac] 	^^^^^^^^^
+    [javac] Syntax error, annotations are only available if source level is 5.0
+    [javac] ----------
+    [javac] 16. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 181)
+    [javac] 	ArrayList<String> availableActions = gameLogic.getActionNames();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 17. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java
+    [javac]  (at line 181)
+    [javac] 	ArrayList<String> availableActions = gameLogic.getActionNames();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 18. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 182)
+    [javac] 	for (String action: availableActions)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] 19. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java
+    [javac]  (at line 273)
+    [javac] 	ArrayList<String> itemList = gameLogic.getInventory();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 20. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 273)
+    [javac] 	ArrayList<String> itemList = gameLogic.getInventory();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 21. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 273)
+    [javac] 	ArrayList<String> itemList = gameLogic.getInventory();
+    [javac] 	                                       ^^^^^^^^^^^^
+    [javac] The method getInventory() is undefined for the type GameLogic
+    [javac] ----------
+    [javac] 22. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/app/SwingUI.java (at line 277)
+    [javac] 	for (String anItem: itemList)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] ----------
+    [javac] 23. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java
+    [javac]  (at line 34)
+    [javac] 	private ArrayList<Integer> itemsAdded;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 24. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 34)
+    [javac] 	private ArrayList<Integer> itemsAdded;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 25. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 37)
+    [javac] 	private ArrayList<Integer> itemsRemoved;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 26. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 37)
+    [javac] 	private ArrayList<Integer> itemsRemoved;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 27. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 40)
+    [javac] 	private ArrayList<Integer> itemsRequired;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 28. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java
+    [javac]  (at line 40)
+    [javac] 	private ArrayList<Integer> itemsRequired;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 29. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 44)
+    [javac] 	itemsAdded = new ArrayList<Integer>();
+    [javac] 	^^^^^^^^^^
+    [javac] itemsAdded cannot be resolved
+    [javac] ----------
+    [javac] 30. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 44)
+    [javac] 	itemsAdded = new ArrayList<Integer>();
+    [javac] 	                 ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] 
+    [javac] ----------
+    [javac] 31. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 44)
+    [javac] 	itemsAdded = new ArrayList<Integer>();
+    [javac] 	                           ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 32. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 45)
+    [javac] 	itemsRemoved = new ArrayList<Integer>();
+    [javac] 	^^^^^^^^^^^^
+    [javac] itemsRemoved cannot be resolved
+    [javac] ----------
+    [javac] 33. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 45)
+    [javac] 	itemsRemoved = new ArrayList<Integer>();
+    [javac] 	                   ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 34. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java
+    [javac]  (at line 45)
+    [javac] 	itemsRemoved = new ArrayList<Integer>();
+    [javac] 	                             ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 35. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 46)
+    [javac] 	itemsRequired = new ArrayList<Integer>();
+    [javac] 	^^^^^^^^^^^^^
+    [javac] itemsRequired cannot be resolved
+    [javac] ----------
+    [javac] 36. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 46)
+    [javac] 	itemsRequired = new ArrayList<Integer>();
+    [javac] 	                    ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 37. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java
+    [javac]  (at line 46)
+    [javac] 	itemsRequired = new ArrayList<Integer>();
+    [javac] 	                              ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 38. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 176)
+    [javac] 	itemsAdded.add(id);
+    [javac] 	^^^^^^^^^^
+    [javac] itemsAdded cannot be resolved
+    [javac] ----------
+    [javac] 39. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 184)
+    [javac] 	public ArrayList<Integer> getItemsAdded() 
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 40. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 184)
+    [javac] 	public ArrayList<Integer> getItemsAdded() 
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 41. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 186)
+    [javac] 	return itemsAdded;
+    [javac] 	       ^^^^^^^^^^
+    [javac] itemsAdded cannot be resolved
+    [javac] ----------
+    [javac] 42. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 197)
+    [javac] 	itemsRemoved.add(id);
+    [javac] 	^^^^^^^^^^^^
+    [javac] itemsRemoved cannot be resolved
+    [javac] ----------
+    [javac] 43. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 205)
+    [javac] 	public ArrayList<Integer> getItemsRemoved() 
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 44. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 205)
+    [javac] 	public ArrayList<Integer> getItemsRemoved() 
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 45. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 207)
+    [javac] 	return itemsRemoved;
+    [javac] 	       ^^^^^^^^^^^^
+    [javac] itemsRemoved cannot be resolved
+    [javac] ----------
+    [javac] 46. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 218)
+    [javac] 	itemsRequired.add(id);
+    [javac] 	^^^^^^^^^^^^^
+    [javac] itemsRequired cannot be resolved
+    [javac] ----------
+    [javac] 47. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 226)
+    [javac] 	public ArrayList<Integer> getItemsRequired() 
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 48. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 226)
+    [javac] 	public ArrayList<Integer> getItemsRequired() 
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 49. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Action.java (at line 228)
+    [javac] 	return itemsRequired;
+    [javac] 	       ^^^^^^^^^^^^^
+    [javac] itemsRequired cannot be resolved
+    [javac] ----------
+    [javac] ----------
+    [javac] 50. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 20)
+    [javac] 	private HashMap<Integer, Room> rooms;
+    [javac] 	        ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Room>
+    [javac] ----------
+    [javac] 51. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 20)
+    [javac] 	private HashMap<Integer, Room> rooms;
+    [javac] 	                ^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 52. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 23)
+    [javac] 	private HashMap<Integer, Item> items;
+    [javac] 	        ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Item>
+    [javac] ----------
+    [javac] 53. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 23)
+    [javac] 	private HashMap<Integer, Item> items;
+    [javac] 	                ^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 54. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 26)
+    [javac] 	private HashMap<Integer, Action> actions;
+    [javac] 	        ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Action>
+    [javac] ----------
+    [javac] 55. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 26)
+    [javac] 	private HashMap<Integer, Action> actions;
+    [javac] 	                ^^^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 56. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 36)
+    [javac] 	rooms = new HashMap<Integer, Room>();
+    [javac] 	^^^^^
+    [javac] rooms cannot be resolved
+    [javac] ----------
+    [javac] 57. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 36)
+    [javac] 	rooms = new HashMap<Integer, Room>();
+    [javac] 	            ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Room>
+    [javac] ----------
+    [javac] 58. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 36)
+    [javac] 	rooms = new HashMap<Integer, Room>();
+    [javac] 	                    ^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 59. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 37)
+    [javac] 	items = new HashMap<Integer, Item>();
+    [javac] 	^^^^^
+    [javac] items cannot be resolved
+    [javac] ----------
+    [javac] 60. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 37)
+    [javac] 	items = new HashMap<Integer, Item>();
+    [javac] 	            ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Item>
+    [javac] ----------
+    [javac] 61. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 37)
+    [javac] 	items = new HashMap<Integer, Item>();
+    [javac] 	                    ^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 62. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 38)
+    [javac] 	actions = new HashMap<Integer, Action>();
+    [javac] 	^^^^^^^
+    [javac] actions cannot be resolved
+    [javac] ----------
+    [javac] 63. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 38)
+    [javac] 	actions = new HashMap<Integer, Action>();
+    [javac] 	              ^^^^^^^
+    [javac] The type HashMap is not generic; it cannot be parameterized with arguments <Integer, Action>
+    [javac] ----------
+    [javac] 64. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 38)
+    [javac] 	actions = new HashMap<Integer, Action>();
+    [javac] 	                      ^^^^^^^^^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 65. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 51)
+    [javac] 	rooms.put(id, room);
+    [javac] 	^^^^^
+    [javac] rooms cannot be resolved
+    [javac] ----------
+    [javac] 66. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 62)
+    [javac] 	items.put(id, item);
+    [javac] 	^^^^^
+    [javac] items cannot be resolved
+    [javac] ----------
+    [javac] 67. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 73)
+    [javac] 	actions.put(id, action);
+    [javac] 	^^^^^^^
+    [javac] actions cannot be resolved
+    [javac] ----------
+    [javac] 68. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 94)
+    [javac] 	return rooms.get(id);
+    [javac] 	       ^^^^^
+    [javac] rooms cannot be resolved
+    [javac] ----------
+    [javac] 69. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 105)
+    [javac] 	return items.get(id);
+    [javac] 	       ^^^^^
+    [javac] items cannot be resolved
+    [javac] ----------
+    [javac] 70. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 116)
+    [javac] 	return actions.get(id);
+    [javac] 	       ^^^^^^^
+    [javac] actions cannot be resolved
+    [javac] ----------
+    [javac] 71. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 137)
+    [javac] 	public ArrayList<Action> getActionList()
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Action>
+    [javac] ----------
+    [javac] 72. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 137)
+    [javac] 	public ArrayList<Action> getActionList()
+    [javac] 	                 ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 73. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 139)
+    [javac] 	ArrayList<Action> actions = new ArrayList<Action>();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Action>
+    [javac] ----------
+    [javac] 74. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 139)
+    [javac] 	ArrayList<Action> actions = new ArrayList<Action>();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 75. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 139)
+    [javac] 	ArrayList<Action> actions = new ArrayList<Action>();
+    [javac] 	                                ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Action>
+    [javac] ----------
+    [javac] 76. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 139)
+    [javac] 	ArrayList<Action> actions = new ArrayList<Action>();
+    [javac] 	                                          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 77. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 140)
+    [javac] 	ArrayList<Integer> actionIds = currentRoom.getActions();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 78. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java
+    [javac]  (at line 140)
+    [javac] 	ArrayList<Integer> actionIds = currentRoom.getActions();
+    [javac] 	          ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 79. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/EnvironmentLibrary.java (at line 141)
+    [javac] 	for(Integer id : actionIds)
+    [javac] 	    ^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] ----------
+    [javac] 80. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 16)
+    [javac] 	private ArrayList<Integer> inventory;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 81. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 16)
+    [javac] 	private ArrayList<Integer> inventory;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 82. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 20)
+    [javac] 	inventory = new ArrayList<Integer>();
+    [javac] 	^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 83. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 20)
+    [javac] 	inventory = new ArrayList<Integer>();
+    [javac] 	                ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 84. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 20)
+    [javac] 	inventory = new ArrayList<Integer>();
+    [javac] 	                          ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 85. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 30)
+    [javac] 	inventory.add(item);
+    [javac] 	^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 86. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 38)
+    [javac] 	public void giveItems(ArrayList<Integer> itemList)
+    [javac] 	                      ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 87. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 38)
+    [javac] 	public void giveItems(ArrayList<Integer> itemList)
+    [javac] 	                                ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 88. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 40)
+    [javac] 	inventory.addAll(itemList);
+    [javac] 	^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 89. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 50)
+    [javac] 	public boolean takeItems(ArrayList<Integer> itemList)
+    [javac] 	                         ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 90. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 50)
+    [javac] 	public boolean takeItems(ArrayList<Integer> itemList)
+    [javac] 	                                   ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 91. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 53)
+    [javac] 	for (Integer item : itemList)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] 92. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 55)
+    [javac] 	if(!inventory.contains(item))
+    [javac] 	    ^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 93. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 62)
+    [javac] 	for (Integer item : itemList)
+    [javac] 	     ^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] 94. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 64)
+    [javac] 	inventory.remove(item);             
+    [javac] 	^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 95. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 78)
+    [javac] 	return inventory.contains(item);
+    [javac] 	       ^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 96. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 87)
+    [javac] 	public boolean hasItems(ArrayList<Integer> itemList)
+    [javac] 	                        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 97. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java
+    [javac]  (at line 87)
+    [javac] 	public boolean hasItems(ArrayList<Integer> itemList)
+    [javac] 	                                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 98. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 90)
+    [javac] 	for(Integer item: itemList)
+    [javac] 	    ^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Syntax error, 'for each' statements are only available if source level is 5.0
+    [javac] ----------
+    [javac] 99. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 92)
+    [javac] 	if(!inventory.contains(item))
+    [javac] 	    ^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] ----------
+    [javac] 100. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 105)
+    [javac] 	public ArrayList<Integer> getInventory()
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 101. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 105)
+    [javac] 	public ArrayList<Integer> getInventory()
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 102. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Player.java (at line 107)
+    [javac] 	return inventory;
+    [javac] 	       ^^^^^^^^^
+    [javac] inventory cannot be resolved
+    [javac] 
+    [javac] ----------
+    [javac] ----------
+    [javac] 103. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 22)
+    [javac] 	private ArrayList<Integer> actions;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 104. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 22)
+    [javac] 	private ArrayList<Integer> actions;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 105. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 25)
+    [javac] 	private ArrayList<Integer> items;
+    [javac] 	        ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 106. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 25)
+    [javac] 	private ArrayList<Integer> items;
+    [javac] 	                  ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 107. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 29)
+    [javac] 	actions = new ArrayList<Integer>();
+    [javac] 	^^^^^^^
+    [javac] actions cannot be resolved
+    [javac] ----------
+    [javac] 108. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 29)
+    [javac] 	actions = new ArrayList<Integer>();
+    [javac] 	              ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 109. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 29)
+    [javac] 	actions = new ArrayList<Integer>();
+    [javac] 	                        ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 110. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 30)
+    [javac] 	items = new ArrayList<Integer>();
+    [javac] 	^^^^^
+    [javac] items cannot be resolved
+    [javac] ----------
+    [javac] 111. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 30)
+    [javac] 	items = new ArrayList<Integer>();
+    [javac] 	            ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 
+    [javac] 112. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 30)
+    [javac] 	items = new ArrayList<Integer>();
+    [javac] 	                      ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 113. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 80)
+    [javac] 	actions.add(id);
+    [javac] 	^^^^^^^
+    [javac] actions cannot be resolved
+    [javac] ----------
+    [javac] 114. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 88)
+    [javac] 	public ArrayList<Integer> getActions() 
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 115. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 88)
+    [javac] 	public ArrayList<Integer> getActions() 
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 116. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 100)
+    [javac] 	items.add(id);
+    [javac] 	^^^^^
+    [javac] items cannot be resolved
+    [javac] ----------
+    [javac] 117. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java
+    [javac]  (at line 108)
+    [javac] 	public ArrayList<Integer> getItems() 
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 118. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/data/Room.java (at line 108)
+    [javac] 	public ArrayList<Integer> getItems() 
+    [javac] 	                 ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] ----------
+    [javac] 119. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 23)
+    [javac] 	ArrayList<String> printQueue = new ArrayList<String>();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 120. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 23)
+    [javac] 	ArrayList<String> printQueue = new ArrayList<String>();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 121. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 23)
+    [javac] 	ArrayList<String> printQueue = new ArrayList<String>();
+    [javac] 	                                   ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 122. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 23)
+    [javac] 	ArrayList<String> printQueue = new ArrayList<String>();
+    [javac] 	                                             ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 123. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 55)
+    [javac] 	ArrayList<Action> validActions;
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Action>
+    [javac] ----------
+    [javac] 124. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 55)
+    [javac] 	ArrayList<Action> validActions;
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 125. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 56)
+    [javac] 	ArrayList<String> validActionNames;
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 126. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 56)
+    [javac] 	ArrayList<String> validActionNames;
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 127. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 63)
+    [javac] 	if (printQueue.isEmpty())
+    [javac] 	    ^^^^^^^^^^
+    [javac] printQueue cannot be resolved
+    [javac] ----------
+    [javac] 128. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 81)
+    [javac] 	validActions = this.lib.getActionList();
+    [javac] 	                        ^^^^^^^^^^^^^
+    [javac] The method getActionList() is undefined for the type EnvironmentLibrary
+    [javac] ----------
+    [javac] 129. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 108)
+    [javac] 	if(!printQueue.isEmpty())
+    [javac] 	    ^^^^^^^^^^
+    [javac] printQueue cannot be resolved
+    [javac] ----------
+    [javac] 130. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 113)
+    [javac] 	if (this.printQueue.size() == 0)
+    [javac] 	         ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] 131. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 131)
+    [javac] 	ArrayList<Integer> requiredItems;
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 132. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 131)
+    [javac] 	ArrayList<Integer> requiredItems;
+    [javac] 	          ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 133. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 132)
+    [javac] 	ArrayList<Integer> itemsAdded;
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 134. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 132)
+    [javac] 	ArrayList<Integer> itemsAdded;
+    [javac] 	          ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 
+    [javac] 135. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 133)
+    [javac] 	ArrayList<Integer> itemsRemoved;
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <Integer>
+    [javac] ----------
+    [javac] 136. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 133)
+    [javac] 	ArrayList<Integer> itemsRemoved;
+    [javac] 	          ^^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 137. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 138)
+    [javac] 	requiredItems = action.getItemsRequired();
+    [javac] 	                       ^^^^^^^^^^^^^^^^
+    [javac] The method getItemsRequired() is undefined for the type Action
+    [javac] ----------
+    [javac] 138. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 148)
+    [javac] 	itemsAdded = action.getItemsAdded();
+    [javac] 	                    ^^^^^^^^^^^^^
+    [javac] The method getItemsAdded() is undefined for the type Action
+    [javac] ----------
+    [javac] 139. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 155)
+    [javac] 	itemsRemoved = action.getItemsRemoved();
+    [javac] 	                      ^^^^^^^^^^^^^^^
+    [javac] The method getItemsRemoved() is undefined for the type Action
+    [javac] ----------
+    [javac] 140. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 194)
+    [javac] 	public ArrayList<String> getActionNames()
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 141. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 194)
+    [javac] 	public ArrayList<String> getActionNames()
+    [javac] 	                 ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 142. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 225)
+    [javac] 	public ArrayList<String> getInventory()
+    [javac] 	       ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 143. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 225)
+    [javac] 	public ArrayList<String> getInventory()
+    [javac] 	                 ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 144. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 283)
+    [javac] 	if(printQueue.size() > 0) //ensure print queue is not empty
+    [javac] 	   ^^^^^^^^^^
+    [javac] printQueue cannot be resolved
+    [javac] ----------
+    [javac] 145. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 285)
+    [javac] 	lastItemInQueue = this.printQueue.get(printQueue.size() - 1) + text;
+    [javac] 	                       ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] 146. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 285)
+    [javac] 	lastItemInQueue = this.printQueue.get(printQueue.size() - 1) + text;
+    [javac] 	                                      ^^^^^^^^^^
+    [javac] printQueue cannot be resolved
+    [javac] ----------
+    [javac] 147. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 286)
+    [javac] 	this.printQueue.remove(printQueue.size() - 1);
+    [javac] 	     ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] 148. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 286)
+    [javac] 	this.printQueue.remove(printQueue.size() - 1);
+    [javac] 	                       ^^^^^^^^^^
+    [javac] printQueue cannot be resolved
+    [javac] ----------
+    [javac] 149. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 296)
+    [javac] 	ArrayList<String> chunks = new ArrayList<String>();
+    [javac] 	^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 150. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 296)
+    [javac] 	ArrayList<String> chunks = new ArrayList<String>();
+    [javac] 	          ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 151. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 296)
+    [javac] 	ArrayList<String> chunks = new ArrayList<String>();
+    [javac] 	                               ^^^^^^^^^
+    [javac] The type ArrayList is not generic; it cannot be parameterized with arguments <String>
+    [javac] ----------
+    [javac] 152. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java
+    [javac]  (at line 296)
+    [javac] 	ArrayList<String> chunks = new ArrayList<String>();
+    [javac] 	                                         ^^^^^^
+    [javac] Syntax error, parameterized types are only available if source level is 5.0
+    [javac] ----------
+    [javac] 153. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 303)
+    [javac] 	this.printQueue.addAll(chunks);
+    [javac] 	     ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] 154. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 316)
+    [javac] 	poppedText = this.printQueue.get(0);
+    [javac] 	                  ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] 155. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/logic/GameLogic.java (at line 317)
+    [javac] 	this.printQueue.remove(0);
+    [javac] 	     ^^^^^^^^^^
+    [javac] printQueue cannot be resolved or is not a field
+    [javac] ----------
+    [javac] ----------
+    [javac] 156. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 30)
+    [javac] 	private Integer INITIAL_ROOM = 0;   // Initial room to begin in
+    [javac] 	                ^^^^^^^^^^^^
+    [javac] Type mismatch: cannot convert from int to Integer
+    [javac] ----------
+    [javac] 157. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 104)
+    [javac] 	room.setId(Integer.parseInt(idNode.getTextContent()));
+    [javac] 	     ^^^^^
+    [javac] The method setId(Integer) in the type Room is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 158. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java
+    [javac]  (at line 122)
+    [javac] 	room.addAction(Integer.parseInt(text));
+    [javac] 	     ^^^^^^^^^
+    [javac] The method addAction(Integer) in the type Room is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 159. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 127)
+    [javac] 	room.addItem(Integer.parseInt(text));
+    [javac] 	     ^^^^^^^
+    [javac] The method addItem(Integer) in the type Room is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 160. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 158)
+    [javac] 	action.setId(Integer.parseInt(idNode.getTextContent()));
+    [javac] 	       ^^^^^
+    [javac] The method setId(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 161. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java
+    [javac]  (at line 176)
+    [javac] 	action.setSuccessAction(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^^^^^^^^^^
+    [javac] The method setSuccessAction(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 162. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 181)
+    [javac] 	action.setMove(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^
+    [javac] The method setMove(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] 
+    [javac] ----------
+    [javac] 163. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 186)
+    [javac] 	action.addItemAdded(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^^^^^^
+    [javac] The method addItemAdded(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 164. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java
+    [javac]  (at line 191)
+    [javac] 	action.addItemAdded(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^^^^^^
+    [javac] The method addItemAdded(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 165. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 196)
+    [javac] 	action.addItemRequired(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^^^^^^^^^
+    [javac] The method addItemRequired(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 166. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java
+    [javac]  (at line 201)
+    [javac] 	action.setFailureAction(Integer.parseInt(text));
+    [javac] 	       ^^^^^^^^^^^^^^^^
+    [javac] The method setFailureAction(Integer) in the type Action is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 167. ERROR in /home/cgibson/NetBeansProjects/ProjectSCUD/src/scud/parser/LevelParser.java (at line 233)
+    [javac] 	item.setId(Integer.parseInt(idNode.getTextContent()));
+    [javac] 	     ^^^^^
+    [javac] The method setId(Integer) in the type Item is not applicable for the arguments (int)
+    [javac] ----------
+    [javac] 167 problems (167 errors)

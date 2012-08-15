@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ProjectSCUD" basedir="." default="all-isolation-tests">
+
+    <property file="build.properties"/>
+    
+    <path id="junit.lib.path.ref">
+        <fileset dir="lib" includes="junit-4.1.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="${classes.dir}"/>
+        <delete dir="${build.dir}"/>
+    </target>
+    
+    <target name="all-isolation-tests" depends="driver-isolation-tests,
+            junit-isolation-tests"/>
+    
+    <target name="driver-isolation-tests" depends="consoleui-test,
+            swingui-test"/>
+            
+    <target name="junit-isolation-tests" depends="levelparser-test,
+            gamelogic-test,environmentlibrary-test"/>
+    
+    <!-- Console UI Integration Test -->
+    <target name="consoleui-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <!-- Generate the ScudUI class -->
+        <javac destdir="${classes.dir}" classpath="${javac.test.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/app/ScudUI.java"/>
+        </javac>
+        
+        <!-- Generate the fake classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.test.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${fake.src.dir}"/>
+            <include name="scud/logic/GameLogic.java"/>     
+            <include name="scud/app/SwingUI.java"/>
+        </javac>
+        
+        <!-- Generate the ConsolueUI Gamelogic SwingUI and ScudApp classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.test.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/app/ScudApp.java"/>
+            <include name="scud/app/ConsoleUI.java"/>
+        </javac>
+        
+        <!-- Generate the ConsoleUI test class -->
+        <javac destdir="${classes.dir}" classpath="${javac.test.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${test.src.dir}"/>
+            <include name="scud/app/ConsoleUITest.java"/>
+        </javac>
+        
+        <!-- Run the application with a set input and output -->
+        <java classname="scud.app.ScudApp" 
+                input="test/data/ConsoleUITest.input.fake" 
+                output="test/data/ConsoleUITest.results.fake"
+                fork="true">
+            <classpath path="${run.classpath}"/>
+            <arg value="-c"/>
+        </java>
+                
+        <!-- Check the differences between the output and the oracle -->
+        <exec executable="diff">
+            <arg value="-b"/>
+            <arg file="test/data/ConsoleUITest.results.fake"/>
+            <arg file="test/data/ConsoleUITest.oracle.fake"/>
+        </exec>
+    </target>
+    
+    <!-- LevelParser Integration Test -->
+    <target name="levelparser-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <!-- Generate the ConsolueUI and ScudApp classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/parser/LevelParser.java"/>
+        </javac>
+        
+        <!-- Generate the LevelParser test class -->
+        <javac destdir="${classes.dir}"
+                debug="true" debuglevel="lines,vars,source">
+            <classpath path="${javac.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <src path="${test.src.dir}"/>
+            <include name="scud/parser/LevelParserTest.java"/>
+        </javac>
+        
+        <!-- Create the fake GameLogic class and Swing UI class -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${fake.src.dir}"/>
+            <include name="scud/data/**"/>
+        </javac>
+        
+        <!-- Run LevelParser JUnit tests -->
+        <junit fork="true" haltonfailure="false" printsummary="on" showoutput="true" dir=".">
+            <classpath path="${run.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <test name="scud.parser.LevelParserTest"/>
+        </junit>
+    </target>
+    
+    <!-- EnvironmentLibrary Integration Test -->
+    <target name="environmentlibrary-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <!-- Generate the EnvironmentLibrary classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/data/EnvironmentLibrary.java"/>
+        </javac>
+        
+        <!-- Generate the EnvironmentLibrary test class -->
+        <javac destdir="${classes.dir}"
+                debug="true" debuglevel="lines,vars,source">
+            <classpath path="${javac.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <src path="${test.src.dir}"/>
+            <include name="scud/data/EnvironmentLibraryTest.java"/>
+        </javac>
+        
+        <!-- Run EnvironmentLibrary JUnit tests -->
+        <junit fork="true" haltonfailure="false" printsummary="on" showoutput="true" dir=".">
+            <classpath path="${run.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <test name="scud.data.EnvironmentLibraryTest"/>
+
+        </junit>
+    </target>
+    
+    <!-- GameLogic Integration Test -->
+    <target name="gamelogic-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <!-- Generate the ScudUI class -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/data/Room.java"/>
+            <include name="scud/data/Action.java"/>
+            <include name="scud/data/Item.java"/>
+            <include name="scud/data/Player.java"/>
+            <include name="scud/app/ScudUI.java"/>
+        </javac>
+        
+        <!-- Create the fake EnvironmentLibrary class and ConsoleUI class -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${fake.src.dir}"/>
+            <include name="scud/data/EnvironmentLibrary.java"/>
+            <include name="scud/parser/LevelParser.java"/>
+        </javac>
+        
+        <!-- Generate the SwingUI and ScudApp classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/app/BlankUI.java"/>
+            <include name="scud/logic/GameLogic.java"/>
+        </javac>
+        
+        <!-- Generate the GameLogic test class -->
+        <javac destdir="${classes.dir}"
+                debug="true" debuglevel="lines,vars,source">
+            <classpath path="${javac.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <src path="${test.src.dir}"/>
+            <include name="scud/logic/GameLogicTest.java"/>
+        </javac>
+        
+        <!-- Run LevelParser JUnit tests -->
+        <junit fork="true" haltonfailure="false" printsummary="on" showoutput="true" dir=".">
+            <classpath path="${run.test.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <test name="scud.logic.GameLogicTest"/>
+        </junit>
+    </target>
+    
+    <!-- SwingUI Integration Test -->
+    <target name="swingui-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <!-- Generate the ScudUI class -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/app/ScudUI.java"/>
+        </javac>
+        
+        <!-- Create the fake GameLogic class -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${fake.src.dir}"/>
+            <include name="scud/logic/GameLogic.java"/>
+        </javac>
+        
+        <!-- Generate the SwingUI and ScudApp classes -->
+        <javac destdir="${classes.dir}" classpath="${javac.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${src.dir}"/>
+            <include name="scud/app/ScudApp.java"/>
+            <include name="scud/app/SwingUI.java"/>
+        </javac>
+        
+        <!-- Generate the SwingUI test class -->
+        <javac destdir="${classes.dir}"
+                debug="true" debuglevel="lines,vars,source">
+            <classpath path="${javac.test.classpath}"/>
+            <src path="${test.src.dir}"/>
+            <include name="scud/app/SwingUITest.java"/>
+        </javac>
+        
+        <!-- Run SwingUI Costello test -->
+        <java classname="junit.extensions.abbot.ScriptTestSuite"
+                fork="true" debug="true" debuglevel="lines,vars,source">
+            <classpath path="${run.costello.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <arg file="test/data/SwingTest.xml"/>
+        </java>
+    </target>
+    
+</project>

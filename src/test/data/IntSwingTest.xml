@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Jason Swalwell -->
+<AWTTestScript slow="true">
+  <component class="javax.swing.JButton" id="Continue" index="5" parent="JPanel Instance" text="Continue" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="EAST" index="1" parent="JPanel Instance 6" text="EAST" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Enter" index="3" parent="JPanel Instance" text="Enter" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Help" index="4" parent="JPanel Instance" text="Help" window="Project SCUD" />
+  <component class="javax.swing.JDialog" id="Help 2" parent="Project SCUD" title="Help" />
+  <component class="javax.swing.JDialog" id="Help 3" parent="Project SCUD 2" title="Help" />
+  <component class="javax.swing.JDialog" id="Help 4" parent="Project SCUD 2" title="Help" />
+  <component class="javax.swing.JDialog" id="Help 5" parent="Project SCUD 2" title="Help" />
+  <component class="javax.swing.JComboBox" id="JComboBox Instance" index="0" parent="JPanel Instance" window="Project SCUD" />
+  <component class="javax.swing.JLayeredPane" id="JLayeredPane Instance" index="1" parent="JRootPane Instance" window="Project SCUD" />
+  <component class="javax.swing.JLayeredPane" id="JLayeredPane Instance 2" index="1" parent="JRootPane Instance 2" window="Help 2" />
+  <component class="javax.swing.JLayeredPane" id="JLayeredPane Instance 3" index="1" parent="JRootPane Instance 3" window="Help 3" />
+  <component class="javax.swing.JLayeredPane" hOrder="1" id="JLayeredPane Instance 4" index="1" parent="JRootPane Instance 4" window="Help 4" />
+  <component class="javax.swing.JLayeredPane" hOrder="1" id="JLayeredPane Instance 5" index="1" parent="JRootPane Instance 5" window="Help 5" />
+  <component class="javax.swing.JOptionPane" id="JOptionPane Instance" index="0" parent="JPanel Instance 8" window="Help 2" />
+  <component class="javax.swing.JOptionPane" id="JOptionPane Instance 2" index="0" parent="JPanel Instance 11" window="Help 3" />
+  <component class="javax.swing.JOptionPane" id="JOptionPane Instance 3" index="0" parent="JPanel Instance 12" window="Help 4" />
+  <component class="javax.swing.JOptionPane" id="JOptionPane Instance 4" index="0" parent="JPanel Instance 13" window="Help 5" />
+  <component class="javax.swing.JPanel" id="JPanel Instance" index="1" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 10" index="0" parent="JOptionPane Instance 2" window="Help 3" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 11" index="0" parent="JLayeredPane Instance 3" window="Help 3" />
+  <component class="javax.swing.JPanel" hOrder="3" id="JPanel Instance 12" index="0" parent="JLayeredPane Instance 4" window="Help 4" />
+  <component class="javax.swing.JPanel" hOrder="3" id="JPanel Instance 13" index="0" parent="JLayeredPane Instance 5" window="Help 5" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 14" index="4" parent="JPanel Instance 8" window="Project SCUD 2" />
+  <component class="javax.swing.JPanel" hOrder="1" id="JPanel Instance 2" index="0" parent="JLayeredPane Instance" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 3" index="0" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 4" index="4" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 5" index="3" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 6" index="2" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 7" index="0" parent="JPanel Instance 4" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 8" index="0" parent="JLayeredPane Instance 2" window="Help 2" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 9" index="0" parent="JOptionPane Instance" window="Help 2" />
+  <component class="javax.swing.JRootPane" id="JRootPane Instance" index="0" parent="Project SCUD" />
+  <component class="javax.swing.JRootPane" id="JRootPane Instance 2" index="0" parent="Help 2" />
+  <component class="javax.swing.JRootPane" id="JRootPane Instance 3" index="0" parent="Help 3" />
+  <component class="javax.swing.JRootPane" hOrder="1" id="JRootPane Instance 4" index="0" parent="Help 4" />
+  <component class="javax.swing.JRootPane" hOrder="1" id="JRootPane Instance 5" index="0" parent="Help 5" />
+  <component class="javax.swing.JTextField" id="JTextField Instance" index="2" parent="JPanel Instance" window="Project SCUD" />
+  <component class="javax.swing.JTextPane" id="JTextPane Instance" index="1" parent="JPanel Instance 4" window="Project SCUD" />
+  <component class="javax.swing.JTextPane" id="JTextPane Instance 2" index="1" parent="JPanel Instance 14" window="Project SCUD 2" />
+  <component class="javax.swing.JButton" id="Look" index="2" parent="JPanel Instance" text="Look" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="NORTH" index="1" parent="JPanel Instance 3" text="NORTH" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="OptionPane.body" index="1" name="OptionPane.body" parent="OptionPane.realBody" window="Help 2" />
+  <component class="javax.swing.JPanel" id="OptionPane.body 2" index="1" name="OptionPane.body" parent="OptionPane.realBody 2" window="Help 3" />
+  <component class="javax.swing.JButton" id="OptionPane.button" index="0" name="OptionPane.button" parent="OptionPane.buttonArea" text="OK" window="Help 2" />
+  <component class="javax.swing.JButton" id="OptionPane.button 2" index="0" name="OptionPane.button" parent="OptionPane.buttonArea 2" text="OK" window="Help 4" />
+  <component class="javax.swing.JButton" id="OptionPane.button 3" index="0" name="OptionPane.button" parent="OptionPane.buttonArea 3" text="OK" window="Help 5" />
+  <component class="javax.swing.JPanel" id="OptionPane.buttonArea" index="1" name="OptionPane.buttonArea" parent="JOptionPane Instance" window="Help 2" />
+  <component class="javax.swing.JPanel" id="OptionPane.buttonArea 2" index="1" name="OptionPane.buttonArea" parent="JOptionPane Instance 3" window="Help 4" />
+  <component class="javax.swing.JPanel" id="OptionPane.buttonArea 3" index="1" name="OptionPane.buttonArea" parent="JOptionPane Instance 4" window="Help 5" />
+  <component class="javax.swing.JLabel" id="OptionPane.label" index="0" name="OptionPane.label" parent="OptionPane.body" text="Try one of the following actions" window="Help 2" />
+  <component class="javax.swing.JLabel" id="OptionPane.label 2" index="2" name="OptionPane.label" parent="OptionPane.body 2" text="examine broken tent" window="Help 3" />
+  <component class="javax.swing.JPanel" id="OptionPane.realBody" index="0" name="OptionPane.realBody" parent="JPanel Instance 9" window="Help 2" />
+  <component class="javax.swing.JPanel" id="OptionPane.realBody 2" index="0" name="OptionPane.realBody" parent="JPanel Instance 10" window="Help 3" />
+  <component class="SwingUI" id="Project SCUD" root="true" title="Project SCUD" />
+  <component class="scud.app.SwingUI" id="Project SCUD 2" root="true" title="Project SCUD" />
+  <component class="javax.swing.JButton" id="SOUTH" index="1" parent="JPanel Instance 7" text="SOUTH" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Start Game" index="6" parent="JPanel Instance" text="Start Game" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Use Item" index="1" parent="JPanel Instance" text="Use Item" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="WEST" index="1" parent="JPanel Instance 5" text="WEST" window="Project SCUD" />
+  <launch args="[]" class="scud.app.SwingUITest" classpath=".;../../build/classes/" desc="Launch SwingUITest.main([])" method="main" />
+  <assert component="JTextPane Instance" method="getText" value="        ,, &#xA;        `7MM&quot;&quot;&quot;Mq.                db                 mm &#xA;          MM   `MM.                                  MM &#xA;          MM   ,M9`7Mb,od8,pW&quot;Wq`7MM .gP&quot;Ya  ,p6&quot;bommMMmm &#xA;          MMmmdM9   MM' &quot;6W'   `WbMM,M'   Yb6M'  OO  MM &#xA;          MM        MM   8M     M8MM8M&quot;&quot;&quot;&quot;&quot;&quot;8M       MM &#xA;          MM        MM   YA.   ,A9MMYM.    ,YM.    , MM &#xA;        .JMML.    .JMML.  `Ybmd9' MM `Mbmmd' YMbmd'  `Mbmo &#xA;                               QO MP &#xA;                               `bmP &#xA;                                &#xA;                                &#xA;            .M&quot;&quot;&quot;bgd  .g8&quot;&quot;&quot;bgd`7MMF'   `7MF`7MM&quot;&quot;&quot;Yb. &#xA;           ,MI    &quot;Y.dP'     `M  MM       M   MM    `Yb. &#xA;           `MMb.    dM'       `  MM       M   MM     `Mb &#xA;             `YMMNq.MM           MM       M   MM      MM &#xA;           .     `MMMM.          MM       M   MM     ,MP &#xA;           Mb     dM`Mb.     ,'  YM.     ,M   MM    ,dP' &#xA;           P&quot;Ybmmd&quot;   `&quot;bmmmd'    `bmmmmd&quot;' .JMMmmmdP' &#xA;&#xA;&#x9;&#x9;&#x9; By 10k Software" />
+  <sequence>
+    <action args="Start Game" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;  Intro&#xA;&#xA;~~~~~~~~~~&#xA;           &#xA;You are Dane, a young farmer's son from the small, farming village of Townsend. You resided with your stern but caring family, helping your mother with the chores and your father with the plowing, until the fateful day came when, in preparation for the Fall Moon Festival, you accidentally destroyed the Scared Tooth of Baelorn in the midst of moving it to the village plaza.&#xA;        &#xA;The three-foot dragon tooth had remained hidden within the safe confines of your church, a memorial of the time when an ancient red dragon descended upon Townsend many decades ago with intent to devour the little village. Baelorn, the god of strength and protection, flew from the heavens and drove his mighty axe through the dragon's neck, saving your village from a gruesome fate. He had given the elder of the village the largest tooth from the mighty dragon's jaw, promising that so long as the village kept that tooth safe, dragons would never dare attack the village again. His word was true, as Aranox, a fierce dragon that often sought to destroy the village, could do no more than fume impatiently within the depths of his lair, hidden within the nearby mountains. And so the Tooth was kept safe deep within the vaults of the church, except for when it was placed in the center of the village during the Fall Moon Festival, when the villagers celebrated the end of the harvest and gave thanks to their merciful god, Baelorn. " />
+  <sequence>
+    <action args="Continue" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;&#xA;No one could have predicted  the earthquake that came and shook the ground with such a force that it sent you reeling off of your feet, the smooth Tooth slipping through  your grasp; no one could have predicted that the once sturdy Tooth had grown weak over the years, or that it would succumb to the short fall, the decayed Tooth shattering into dust. But so it has passed, and now the magic is gone, the seals are broken; it will not take the dragons long to figure out that your village is prey once more, and Aranox has been eagerly waiting for a chance to ravage it...&#xA;&#xA;Shunned by your village folk, you have been sent to face the fearsome dragon Aranox deep within the mountains. Should you defeat the terrible beast and retrieve his largest tooth, the god Baelorn will accept your triumph and enchant the tooth so that it will protect village once more. Should you fail, Aranox will be satisfied, if only for a while, granting the village time to relocate to another city. Either way, the village will be saved. Whether you survive or not is up to you...  " />
+  <sequence>
+    <action args="Continue" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;&#xA;You approach the mouth of a cave entrance, gripping the sides as you drop in. The seven-foot drop doesn't damage you, but the slippery walls will make it impossible to leave through this door. Your only chance is to move forward. There should be an exit out of the caves in Aranox's lair. All you need to do is find and get past a murderous dragon.&#xA;&#xA;Now you begin your journey... type 'begin' to start!&#xA;        " />
+  <sequence>
+    <action args="JTextField Instance,0" class="javax.swing.text.JTextComponent" method="actionClick" />
+    <action args="JTextField Instance,begin" method="actionKeyString" />
+    <action args="Enter" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;The cave entrance is relatively dry. There is some small vegetation that grows from where seeds have fallen into the hole, lost forever in this winding maze. To your left, there is some wreckage, perhaps from a small tent that was used long ago. Most of the materials are worn and useless. There is a plain metal door to the east, and a passage to the south.&#xA;        " />
+  <sequence>
+    <action args="Help" class="javax.swing.AbstractButton" method="actionClick" />
+    <wait args="Help 2" class="abbot.tester.ComponentTester" method="assertComponentShowing" />
+  </sequence>
+  <assert component="OptionPane.label 2" method="getText" value="examine broken tent" />
+  <sequence>
+    <action args="OptionPane.button 2" class="javax.swing.AbstractButton" method="actionClick" />
+    <wait args="Help 5" class="abbot.tester.ComponentTester" invert="true" method="assertComponentShowing" />
+  </sequence>
+  <sequence>
+    <action args="JTextField Instance,0" class="javax.swing.text.JTextComponent" method="actionClick" />
+    <action args="JTextField Instance,examine broken tent" method="actionKeyString" />
+    <action args="JTextField Instance,notify-field-accept" class="javax.swing.JComponent" method="actionActionMap" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="You find some rope." />
+  <sequence>
+    <action args="Look" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;The cave entrance is relatively dry. There is some small vegetation that grows from where seeds have fallen into the hole, lost forever in this winding maze. To your left, there is some wreckage, perhaps from a small tent that was used long ago. Most of the materials are worn and useless. There is a plain metal door to the east, and a passage to the south.&#xA;        " />
+  <sequence>
+    <action args="Use Item" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;The cave entrance is relatively dry. There is some small vegetation that grows from where seeds have fallen into the hole, lost forever in this winding maze. To your left, there is some wreckage, perhaps from a small tent that was used long ago. Most of the materials are worn and useless. There is a plain metal door to the east, and a passage to the south.&#xA;        " />
+  <sequence>
+    <action args="JComboBox Instance,Rope" class="javax.swing.JComboBox" method="actionSelectItem" />
+    <action args="Use Item" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="You try to use rope but fail miserably. Why don't you go cry about it?&#xA;" />
+  <sequence>
+    <action args="SOUTH" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;You enter into the north side of a large chamber room, which is separated by a huge bottomless chasm. There is no way you could jump it, but there are stalagmites on either side that looked as if they supported a bridge-like construct long ago. A slight wind fills the chamber with a gentle sound, soothing your nerves. In the north-west corner, there is an old, moldy chest, have covered in dirt and rocks. There are also two cave passages, one north and one east.&#xA;        " />
+  <sequence>
+    <action args="EAST" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;There are all sorts of glowing fungi thriving in this passage, coloring the walls with their lights. Thankfully, none of them seem to be moving, as you have heard tales of fungi monsters that preyed on adventurers. Even so, the skeleton in the corner unnerves you a bit as you proceed. It looks similarly dressed as you, which doesn’t make you feel any better. There is a west passage and a south passage out of this room.&#xA;        " />
+  <sequence>
+    <action args="NORTH" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="You try to move north but fail miserably. Why don't you go cry about it?&#xA;" />
+  <sequence>
+    <action args="WEST" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="&#xA;You enter into the north side of a large chamber room, which is separated by a huge bottomless chasm. There is no way you could jump it, but there are stalagmites on either side that looked as if they supported a bridge-like construct long ago. A slight wind fills the chamber with a gentle sound, soothing your nerves. In the north-west corner, there is an old, moldy chest, have covered in dirt and rocks. There are also two cave passages, one north and one east.&#xA;        " />
+  <sequence>
+    <action args="Project SCUD 2" class="java.awt.Window" method="actionClose" />
+  </sequence>
+  <terminate />
+</AWTTestScript>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Testlevel.xml
+    Created on : October 3, 2008, 12:35 AM
+    Author     : cgibson
+    Description: 
+        Example level for the SCUD App
+-->
+
+<root>
+    <room id="0"> <!-- Unconsiousness -->
+        <description>
+All is dark around you, your body feels numb, almost nonexistent.  You try to move your arms and legs, but they are slow to respond, if they respond at all.
+
+You hear a faint voice in the vast blackness of your consiousness, your own voice.
+
+"Wake up."
+        </description>
+        <do_action>1</do_action> <!-- wake up -->
+    </room>
+    
+    <room id="1"> <!-- Main room -->
+        <description>
+The room around you is bland, tasteless.  It looks like an unfinished room in some industrial building.  You can see asbestos lining the uncovered walls, a pile of long two-by-fours lay stacked in a far corner. [wait] 
+
+A simple workbench is set up to your right, while to your left a hallway leads to some dark destination.  Pipes line the walls, the faint hum of generators fills your ears.
+        </description>
+        <do_action>2</do_action> <!-- enter hallway -->
+        <do_action>3</do_action> <!-- grab some two-by-fours -->
+        <do_action>4</do_action> <!-- examine the workbench -->
+    </room>
+    
+    <room id="2"> <!-- Hallway -->
+        <description>
+You see dim red lights down the deep shaft, set at regular intervals for at least twenty stories, and you realize you are standing at the edge of a chasm.
+
+It looks like an unfinished eleveator shaft.  Another room is eight feet across from you, if only you had something to bridge the gap...
+        </description>
+        <do_action>5</do_action> <!-- cross the gap -->
+        <do_action>11</do_action> <!-- leave hallway -->
+    </room>
+    
+    <room id="3"> <!-- Lobby -->
+        <description>
+You must be on the first floor, despite the hallway shaft that easily delved over three hundred feet into the earth.
+
+A single chrome desk, about thirty feet wide and curved in a quarter circle faces a set of large double doors.  Two large metallic pillars rise high above, supporting a large catwalk that overlooks the lobby floor. [wait] 
+
+On the floor is a large circular insigma, obviously the company's logo.  Inside the black circle is a white 'V' with a star above the letter. The large flat screen monitors looking down upon the lobby floor sport the same logo, with 3D letters that spell out "DeiTec Pharmaceuticals" spinning slowly underneith.
+        </description>
+        <do_action>10</do_action> <!-- walk into lobby -->
+        <do_action>12</do_action> <!-- cross the gap again -->
+    </room>
+    
+    <room id="99"> <!-- death -->
+        <description>
+
+You are dead
+        </description>
+    </room>
+    
+    <room id="100"> <!-- sleep -->
+        <description>You are not dead, but are not fully alive either.  You cannot move, and images flicker in the back of your mind.</description>
+    </room>
+
+    <action id="1"> <!-- Wake Up -->
+        <name>wake up</name>
+        <description>
+Feeling slowly seeps into your body as you wake.  
+        </description>
+        <move>1</move>
+    </action>
+    
+    <action id="2"> <!-- Enter Hallway -->
+        <name>enter hallway</name>
+        <description>
+The hallway is dark.  You use the pen-light in your lab coat's pocket to light the way.  The beam isn't all that powerful, but you can still make out the hallway.
+
+As you continue through the hallway, you feel a faint breeze from various installed air conditioners. [wait] 
+
+You're just about to take another step when you stop, your light falling upon nothing.  
+        </description>
+        <move>2</move>
+    </action>
+    
+    <action id="3"> <!-- grab plank -->
+        <name>grab planks</name>
+        <description>You pull a few planks of wood from the pile, these may come in handy.</description>
+        <require_item>1</require_item>
+        <success>7</success>
+        <failure>6</failure>
+    </action>
+    
+    <action id="4"> <!-- examine workbench -->
+        <name>examine workbench</name>
+        <description>The bench has a hand saw and crowbar.  You probably wont be needing them... right?  Of course not.</description>
+    </action>
+    
+    <action id="5"> <!-- cross gap -->
+        <name>cross gap</name>
+        <description></description>
+        <require_item>1</require_item>
+        <success>8</success>
+        <failure>9</failure>
+    </action>
+    
+    <action id="6"> <!-- get 2x4s -->
+        <description>You grab some two-by-four planks.  These may come in handy later on.</description>
+        <add_item>1</add_item>
+    </action>
+    
+    <action id="7"> <!-- get 2x4s -->
+        <description>You try to get more planks of wood, but they fall from your grasp and clatter to the floor.  Two or three may be enough, afterall.</description>
+    </action>
+    
+    <action id="8"> <!-- cross gap -->
+        <description>
+You set the planks of wood across the gap and carefully cross.  It is nerve racking, but you manage to cross without incident.
+
+You walk from the elevator shaft, down a long hallway.  as you walk, you see lights ahead.  The surroundings begin to change, chrome metal paneling lines the walls and floors.
+
+Grating predominently covers the ceiling, save for the endless line of florescent lights along the corners of the ceiling.  A faint breeze flows from the ceiling, a faint steril smell pervading the hallway. [wait] 
+
+The hallway gives way to what seems to be a lobby.
+        </description>
+        <move>3</move>
+    </action>
+    
+    <action id="9"> <!-- fall into gap -->
+        <description>
+Without the aid of any objects, you try to leap across the elevator shaft.  you feel your form hit the other side of the shaft, your fingers clinging desparately to the edge of the floor.  Then you feel your fingers slip, and then the rushing of wind.
+
+You hear a loud bang, and then you feel nothing.
+        </description>
+        <move>99</move>
+    </action>
+    
+    <action id="10"> <!-- fall into gap -->
+        <name>enter lobby</name>
+        <description>
+Just as you begin to turn from the screens, a bright light fills your vision.  Images violently fill your subconsious, images of white, sterile rooms.
+
+Images of needles, empty operating tables and restrained patients yelling.  Then a shadow fills your mind, a towering, lurking figure that seems to eminate suffering and fear. [wait] 
+
+You realize that this is no vision as the figure approaches you, blotting out the bright light in front of you.  You feel cold, clammy flesh against your forearms, your vision flickers as a sharp pain eminates from the back of yuor neck, and all goes dark.
+        </description>
+        <move>100</move>
+    </action>
+    
+    <action id="11"> <!-- return to main room -->
+        <name>leave hallway</name>
+        <description></description>
+        <move>1</move>
+    </action>
+    
+    <action id="12"> <!-- fall into gap -->
+        <name>cross gap</name>
+        <description>
+You attempt to return to the room you had woken in, but as you cross the planks, you hear a cracking noise.  Just as you look down, you see a nasty crack in one of the planks of wood.
+
+It gives out, you feel your balance fail you an you plummet down the shaft to the depths below.  You see the ground coming up to greet you, then nothing.
+        </description>
+        <move>99</move>
+    </action>
+
+    <item id="1"> <!-- Planks of wood -->
+        <name>planks</name>
+        <description>Planks of wood</description>
+    </item>
+    
+</root>

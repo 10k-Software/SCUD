@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ProjectSCUD" basedir="../." default="clean-build">
+
+    <property name="src.dir"        value="src"/>
+    <property name="fake.src.dir"        value="src/FAKES"/>
+    <property name="build.dir"      value="build"/>
+    <property name="classes.dir"    value="${build.dir}/classes"/>
+    <property name="jar.dir"        value="${build.dir}/jar"/>
+    <property name="doc.dir"        value="doc"/>
+
+    <property name="main-class"  value="scud.app.ScudApp"/>
+
+    <target name="clean">
+        <delete dir="${doc.dir}"/>
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac destdir="${classes.dir}" classpath=".">
+            <src path="${src.dir}"/>
+            <include name="scud/**"/>
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+        <copy file="Testlevel.xml" tofile="${jar.dir}/Testlevel.xml"/>
+
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
+    </target>
+    
+    <target name="run-console" depends="jar">
+        
+        <java jar="${jar.dir}/${ant.project.name}.jar" fork="true">
+            <arg value="-c"/>
+        </java>
+    </target>
+
+    <target name="clean-build" depends="clean,jar"/>
+
+    <target name="javadoc" depends="clean,compile">
+        <mkdir dir="${doc.dir}"/>
+        <javadoc destdir="${doc.dir}">
+            
+            <tag name=".date" description="Date:" enabled="true"/>
+                
+                
+            <arg value="-private"/>
+            
+            <arg value="-overview"/>
+            <arg path="projectoverview.html"/>
+            
+            <fileset dir="${src.dir}/" includes="**/*.java" />
+        </javadoc>
+    </target>
+
+</project>

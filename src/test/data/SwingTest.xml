@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Jason Swalwell -->
+<AWTTestScript slow="true">
+  <component class="javax.swing.JButton" id="Continue" index="5" parent="JPanel Instance" text="Continue" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="EAST" index="1" parent="JPanel Instance 6" text="EAST" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Enter" index="3" parent="JPanel Instance" text="Enter" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Help" index="4" parent="JPanel Instance" text="Help" window="Project SCUD" />
+  <component class="javax.swing.JDialog" id="Help 2" parent="Project SCUD" title="Help" />
+  <component class="javax.swing.JComboBox" id="JComboBox Instance" index="0" parent="JPanel Instance" window="Project SCUD" />
+  <component class="javax.swing.JLayeredPane" id="JLayeredPane Instance" index="1" parent="JRootPane Instance" window="Project SCUD" />
+  <component class="javax.swing.JLayeredPane" id="JLayeredPane Instance 2" index="1" parent="JRootPane Instance 2" window="Help 2" />
+  <component class="javax.swing.JOptionPane" id="JOptionPane Instance" index="0" parent="JPanel Instance 8" window="Help 2" />
+  <component class="javax.swing.JPanel" id="JPanel Instance" index="1" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" hOrder="1" id="JPanel Instance 2" index="0" parent="JLayeredPane Instance" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 3" index="0" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 4" index="4" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 5" index="3" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 6" index="2" parent="JPanel Instance 2" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 7" index="0" parent="JPanel Instance 4" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 8" index="0" parent="JLayeredPane Instance 2" window="Help 2" />
+  <component class="javax.swing.JPanel" id="JPanel Instance 9" index="0" parent="JOptionPane Instance" window="Help 2" />
+  <component class="javax.swing.JRootPane" id="JRootPane Instance" index="0" parent="Project SCUD" />
+  <component class="javax.swing.JRootPane" id="JRootPane Instance 2" index="0" parent="Help 2" />
+  <component class="javax.swing.JTextField" id="JTextField Instance" index="2" parent="JPanel Instance" window="Project SCUD" />
+  <component class="javax.swing.JTextPane" id="JTextPane Instance" index="1" parent="JPanel Instance 4" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Look" index="2" parent="JPanel Instance" text="Look" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="NORTH" index="1" parent="JPanel Instance 3" text="NORTH" window="Project SCUD" />
+  <component class="javax.swing.JPanel" id="OptionPane.body" index="1" name="OptionPane.body" parent="OptionPane.realBody" window="Help 2" />
+  <component class="javax.swing.JButton" id="OptionPane.button" index="0" name="OptionPane.button" parent="OptionPane.buttonArea" text="OK" window="Help 2" />
+  <component class="javax.swing.JPanel" id="OptionPane.buttonArea" index="1" name="OptionPane.buttonArea" parent="JOptionPane Instance" window="Help 2" />
+  <component class="javax.swing.JLabel" id="OptionPane.label" index="0" name="OptionPane.label" parent="OptionPane.body" text="Try one of the following actions" window="Help 2" />
+  <component class="javax.swing.JPanel" id="OptionPane.realBody" index="0" name="OptionPane.realBody" parent="JPanel Instance 9" window="Help 2" />
+  <component class="SwingUI" id="Project SCUD" root="true" title="Project SCUD" />
+  <component class="javax.swing.JButton" id="SOUTH" index="1" parent="JPanel Instance 7" text="SOUTH" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Start Game" index="6" parent="JPanel Instance" text="Start Game" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="Use Item" index="1" parent="JPanel Instance" text="Use Item" window="Project SCUD" />
+  <component class="javax.swing.JButton" id="WEST" index="1" parent="JPanel Instance 5" text="WEST" window="Project SCUD" />
+  <launch args="[]" class="scud.app.SwingUITest" classpath=".;../../build/classes/" desc="Launch SwingUITest.main([])" method="main" />
+  <sequence>
+    <action args="Start Game" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : look" />
+  <sequence>
+    <action args="NORTH" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : move north" />
+  <sequence>
+    <action args="WEST" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : move west" />
+  <sequence>
+    <action args="EAST" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : move east" />
+  <sequence>
+    <action args="SOUTH" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : move south" />
+  <sequence>
+    <action args="Use Item" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : move south" />
+  <sequence>
+    <action args="JComboBox Instance,Fake item" class="javax.swing.JComboBox" method="actionSelectItem" />
+    <action args="Use Item" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : use fake item" />
+  <sequence>
+    <action args="Help" class="javax.swing.AbstractButton" method="actionClick" />
+    <wait args="Help 2" class="abbot.tester.ComponentTester" method="assertComponentShowing" />
+  </sequence>
+  <assert component="OptionPane.label" method="getText" value="Try one of the following actions" />
+  <sequence>
+    <action args="OptionPane.button" class="javax.swing.AbstractButton" method="actionClick" />
+    <wait args="Help 2" class="abbot.tester.ComponentTester" invert="true" method="assertComponentShowing" />
+  </sequence>
+  <sequence>
+    <action args="JTextField Instance,0" class="javax.swing.text.JTextComponent" method="actionClick" />
+    <action args="JTextField Instance,examine room" method="actionKeyString" />
+    <action args="Enter" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : examine room" />
+  <sequence>
+    <action args="JTextField Instance,0" class="javax.swing.text.JTextComponent" method="actionClick" />
+    <action args="JTextField Instance,return true" method="actionKeyString" />
+    <action args="JTextField Instance,notify-field-accept" class="javax.swing.JComponent" method="actionActionMap" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="There is more text to display" />
+  <sequence>
+    <action args="Continue" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : " />
+  <sequence>
+    <action args="Look" class="javax.swing.AbstractButton" method="actionClick" />
+  </sequence>
+  <assert component="JTextPane Instance" method="getText" value="The GameLogic executeAction was called with : look" />
+  <terminate />
+</AWTTestScript>
+

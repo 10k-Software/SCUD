@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ProjectSCUD" basedir="." default="all-integration-tests">
+
+    <property file="build.properties"/>
+    
+    <path id="junit.lib.path.ref">
+        <fileset dir="lib" includes="junit-4.1.jar"/>
+    </path>
+    
+    <property name="main-class"  value="scud.app.ScudApp"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac destdir="${classes.dir}" classpath="${src.dir}"
+                debug="true" debuglevel="lines,source">
+            <src path="${src.dir}"/>
+            <exclude name="FAKES/**"/>
+        </javac>
+    </target>
+    
+    <target name="compile-test" depends="clean,compile">
+        <javac destdir="${classes.dir}" classpath="${src.dir}:lib/junit-4.1.jar:lib/ant-junit.jar"
+                debug="true" debuglevel="lines,source">
+            <src path="${test.src.dir}"/>
+            <include name="scud/**"/>
+        </javac>
+        
+    </target>
+    
+    <target name="junit-tests" depends="compile-test">
+        <junit fork="true" haltonfailure="false" printsummary="on" showoutput="true" dir="." >
+            <classpath path="${classes.dir}:lib/junit-4.1.jar:lib/ant-junit.jar"/>
+            <batchtest fork="yes" todir="${reports.dir}">
+                <fileset dir="${test.src.dir}">
+                    <include name="scud/parser/LevelParserTest.java"/>
+                    <include name="scud/logic/GameLogicTest.java"/>
+                    <include name="scud/data/EnvironmentLibraryTest.java"/>
+                    <include name="scud/data/ActionTest.java"/>
+                    <include name="scud/data/PlayerTest.java"/>
+                    <include name="scud/data/RoomTest.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+    
+    <!-- Console UI Integration Test -->
+    <target name="consoleui-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+        
+        <ant target="compile"/>
+        
+        <!-- Generate the ConsoleUI test class -->
+        <javac destdir="${classes.dir}" classpath="${javac.test.classpath}"
+                debug="true" debuglevel="lines,vars,source">
+            <src path="${test.src.dir}"/>
+            <include name="scud/app/ConsoleUITest.java"/>
+        </javac>
+        
+        <!-- Run the application with a set input and default game output-->
+        <java classname="scud.app.ScudApp" 
+                input="test/data/ConsoleUITest.input.real" 
+                output="test/data/ConsoleUITest.results"
+                fork="true">
+            <classpath path="${run.classpath}"/>
+            <arg value="-c"/>
+        </java>
+                
+        <!-- Check the differences between the output and the oracle -->
+        <exec executable="diff">
+            <arg value="-b"/>
+            <arg file="test/data/ConsoleUITest.results"/>
+            <arg file="test/data/ConsoleUITest.oracle.real"/>
+        </exec>
+    	
+    	<!-- Run the application with a set input and user's game output-->
+    	<java classname="scud.app.ScudApp" 
+    	       input="test/data/ConsoleUITest.input.real" 
+    	       output="test/data/ConsoleUITest.user.results"
+    	       fork="true">
+    	   <classpath path="${run.classpath}"/>
+    	   <arg value="-c"/>
+    	   <arg file="test/data/validSimple.xml"/>
+    	</java>
+    	                
+    	<!-- Check the differences between the output and the oracle -->
+    	<exec executable="diff">
+    	    <arg value="-b"/>
+    	    <arg file="test/data/ConsoleUITest.user.results"/>
+    	    <arg file="test/data/ConsoleUITest.user.oracle.real"/>
+    	</exec> 
+    	
+    	<!-- Run the application with a set input and bad game output-->
+    	<java classname="scud.app.ScudApp" 
+    	        input="test/data/ConsoleUITest.input.real" 
+    	        output="test/data/ConsoleUITest.results"
+    	        fork="true">
+    	<classpath path="${run.classpath}"/>
+    	<arg value="-c"/>
+    	<arg value="nonExistant.xml"/>
+    	</java>
+    	                
+    	<!-- Check the differences between the output and the oracle -->
+    	<exec executable="diff">
+    	    <arg value="-b"/>
+    	    <arg file="test/data/ConsoleUITest.results"/>
+    	    <arg file="test/data/ConsoleUITest.oracle.real"/>
+    	</exec>
+    </target>
+    
+    <!-- SwingUI Integration Test -->
+    <target name="swingui-test">
+        <ant target="clean"/>
+        <!-- Create the classes directory after cleaning up the folders -->
+        <mkdir dir="${classes.dir}"/>
+
+        <!-- Compile all classes -->
+        <ant target="compile"/>
+        
+        <!-- Generate the SwingUI test class -->
+        <javac destdir="${classes.dir}"
+                debug="true" debuglevel="lines,vars,source">
+            <classpath path="${javac.test.classpath}"/>
+            <src path="${test.src.dir}"/>
+            <include name="scud/app/SwingUITest.java"/>
+        </javac>
+        
+        <!-- Run SwingUI Costello test -->
+        <java classname="junit.extensions.abbot.ScriptTestSuite"
+                fork="true">
+            <classpath path="${run.costello.classpath}"/>
+            <classpath refid="junit.lib.path.ref"/>
+            <arg file="test/data/IntSwingTest.xml"/>
+        </java>
+    </target>
+    
+    <target name="all-integration-tests" depends="consoleui-test,swingui-test,junit-tests"/>
+    
+</project>

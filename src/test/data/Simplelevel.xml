@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Testlevel.xml
+    Created on : October 3, 2008, 12:35 AM
+    Author     : cgibson
+    Description: 
+        Test level data for the SCUD
+-->
+
+<root>
+    <room id="0"> <!-- Main room -->
+        <description>You see nothing</description>
+        <do_action>1</do_action> <!-- fall down -->
+    </room>
+    
+    <room id="2"> <!-- Main room -->
+        <description>A large pit. There's no way out.</description>
+        <do_action>2</do_action> <!-- get cake -->
+        <do_action>3</do_action> <!-- eat cake -->
+        <do_action>7</do_action>
+        <do_action>55</do_action>
+    </room>
+    
+    <room id="3"> <!-- death -->
+        <description></description>
+    </room>
+
+    <action id="1"> <!-- Fall down -->
+        <name>fall down</name>
+        <description>You fall down.</description>
+        <move>2</move>
+    </action>
+    
+    <action id="2"> <!-- Get cake -->
+        <name>get cake</name>
+        <description>You pick up the cake.</description>
+        <add_item>1</add_item>
+        <add_item>2</add_item>
+        <add_item>3</add_item>
+    </action>
+    
+    <action id="3"> <!-- Eat cake -->
+        <name>eat cake</name>
+        <description>You eat the cake.</description>
+        <require_item>1</require_item>
+        <remove_item>1</remove_item>
+        <success>4</success>
+    </action>
+    
+    <action id="4"> <!-- death -->
+        <name>death</name>
+        <description>You die.</description>
+        <move>3</move>
+    </action>
+    
+    <action id="7"> <!-- null action -->
+        <description>null</description>
+        <move>3</move>
+    </action>
+
+    <item id="1"> <!-- Old rope -->
+        <name>Cake</name>
+        <description>Delicious cake.  You must eat it.</description>
+    </item>
+    
+    <item id="2"> <!-- Old rope -->
+        <description>Empty item.</description>
+    </item>
+    
+</root>
